@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 树形视图</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+    <link href="css/plugins/treeview/bootstrap-treeview.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="layer/mobile/need/layer.css">
+    <link rel="stylesheet" type="text/css" href="layer/theme/default/layer.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/pageNav.css">
+    <link rel="stylesheet" type="text/css" href="css/different.css">
+</head>
+<body>
+	<div id="heigh" class="row wrapper wrapper-content animated fadeInRight">
+		<div class="col-sm-12 pag-posi">
+			<div class="pag-top">
+    			<div class="pag-tleft">
+    				<input id="pag-sear" type="text" placeholder="请输入名称">
+    				<button id="pag-butt"><i class="fa fa-search"></i> 查询</button>
+    			</div>
+    			<ul class="pag-tright">
+    				<li class="pag-trit pag-delete"><i class="fa fa-trash-o"></i> 删除</li>
+    				<li class="pag-trit" id="pag-search"><i class="fa fa-search"></i> 高级搜索</li>
+    				<li class="pag-trit pag-editor"><i class="fa fa-pencil-square-o"></i> 编辑</li>
+    				<li class="pag-trit pag-add"><i class="fa fa-plus"></i> 新增</li>
+    				<li class="pag-trio"><i class="fa fa-refresh"></i></li>
+    			</ul>
+    		</div>
+			<div class="pag-cont">
+				<table class="pag-table">
+					<tr>
+						<th>编号</th>
+						<th>名称</th>
+						<th>简拼</th>
+						<th>级别</th>
+						<th>有效</th>
+						<th>备注</th>
+					</tr>
+					<tr class="pag-tr">
+						<td class="pag-bian">210100</td>
+						<td class="pag-city">沈阳市</td>
+						<td class="pag-jian">sys</td>
+						<td class="number">2</td>
+						<td><i class="fa fa-toggle-on"></i></td>
+						<td></td>
+					</tr>
+					<tr class="pag-tr">
+						<td class="pag-bian">210101</td>
+						<td class="pag-city">上海市</td>
+						<td class="pag-jian">shs</td>
+						<td class="number">1</td>
+						<td><i class="fa fa-toggle-on"></i></td>
+						<td></td>
+					</tr>
+					<tr class="pag-tr">
+						<td class="pag-bian">210102</td>
+						<td class="pag-city">北京市</td>
+						<td class="pag-jian">bjs</td>
+						<td class="number">2</td>
+						<td><i class="fa fa-toggle-on"></i></td>
+						<td></td>
+					</tr>
+					<tr class="pag-tr">
+						<td class="pag-bian">210103</td>
+						<td class="pag-city">天津市</td>
+						<td class="pag-jian">tj</td>
+						<td class="number">3</td>
+						<td><i class="fa fa-toggle-on"></i></td>
+						<td></td>
+					</tr>
+					<tr class="pag-tr">
+						<td class="pag-bian">210104</td>
+						<td class="pag-city">济南市</td>
+						<td class="pag-jian">jns</td>
+						<td class="number">5</td>
+						<td><i class="fa fa-toggle-on"></i></td>
+						<td></td>
+					</tr>
+					<tr class="pag-tr">
+						<td class="pag-bian">210105</td>
+						<td class="pag-city">德州市</td>
+						<td class="pag-jian">dzs</td>
+						<td class="number">3</td>
+						<td><i class="fa fa-toggle-on"></i></td>
+						<td></td>
+					</tr>
+				</table>
+	    	</div>
+	    	<nav aria-label="Page navigation" class="page-nav-outer pag-page" id="PageNavId"></nav>
+
+	        
+		</div>
+	</div>
+	
+	<!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script type="text/javascript" src="layer/mobile/layer.js"></script>
+    <script type="text/javascript" src="layer/layer.js"></script>
+    <script type="text/javascript" src="js/demo/layer-demo.js"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script type="text/javascript" src="js/pageNav.js"></script>
+
+    <!-- Bootstrap-Treeview plugin javascript -->
+    <script src="js/plugins/treeview/bootstrap-treeview.js"></script>
+    <script src="js/demo/treeview-demo.js"></script>
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+    <!--统计代码，可删除-->
+    <script type="text/javascript" src="js/left.js"></script>
+    <script type="text/javascript" src="js/laye.js"></script>
+    <script type="text/javascript">
+        var pageNavObj = null;//用于储存分页对象
+        pageNavObj = new PageNavCreate("PageNavId",{
+            pageCount:30, 
+            currentPage:1, 
+            perPageNum:5, 
+        });
+        pageNavObj.afterClick(pageNavCallBack);
+
+        function pageNavCallBack(clickPage){
+            pageNavObj = new PageNavCreate("PageNavId",{
+                 pageCount:30, 
+                 currentPage:clickPage, 
+                 perPageNum:5, 
+            });
+            pageNavObj.afterClick(pageNavCallBack);
+        }
+
+        $(".pag-add").on("click",function(){
+	  		layer.open({
+		  	    type: 2,
+			    area: ['700px', '450px'],
+			    fixed: false, //不固定
+			    maxmin: true,
+			    content: 'yiny.html',
+			    btn: ['确定'],
+	            yes: function (index, layero) {
+	                // callBack(index, layero);
+	                // return false;
+	                layer.close(index); //如果设定了yes回调，需进行手工关闭
+	            	
+	            },
+	            cancel: function () {
+	              //右上角关闭回调
+
+	            }
+			});
+	  	})
+  	$(".pag-editor").on("click",function(){
+  		if($(".pag-table tr").find("td").hasClass("pag-dele")){
+	  		layer.open({
+	  			type:2,
+	  			area:['700px', '450px'],
+	  			fixed:false,
+	  			maxmin:true,
+	  			content:'yiny.html',
+	  			btn: ['确定'],
+		          yes: function (index, layero) {
+		              // callBack(index, layero);
+		              // return false;
+		              layer.close(index); //如果设定了yes回调，需进行手工关闭
+		            
+		          },
+		          cancel: function () {
+		            //右上角关闭回调
+
+		          }
+	  		});
+	  	}else{
+	  		layer.msg('未选中列表', function(){
+			//关闭后的操作
+			});
+	  	}
+  	})
+  	
+  	/********************删除*******************/
+    $(".pag-delete").click(function(){
+        if($(".pag-table tr").find("td").hasClass("pag-dele")){
+            $(".pag-dele").parent("tr").remove();
+        }else{
+           layer.msg('未选中列表', function(){
+			//关闭后的操作
+			});
+        }
+        
+    })
+    </script>
+</body>
+</html>

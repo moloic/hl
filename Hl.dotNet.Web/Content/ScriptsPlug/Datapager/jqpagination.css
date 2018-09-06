@@ -1,0 +1,155 @@
+.pagination {
+    position:absolute;
+  display: inline-block;
+  border:1px solid #cecece;
+  width:320px;
+  height:37px;
+  border-radius: 3px; }
+
+.pagination a {
+  background-color:#1fb5ac;
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  outline: none;
+
+  color: #1fb5ac;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Times, 'Times New Roman', Georgia, Palatino;
+  /* ATTN: need a better font stack */
+  background-color: #1fb5ac;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(100%, lightgrey));
+  background-image: -webkit-linear-gradient(#fff, #fff);
+  background-image: linear-gradient(#fff, #fff); }
+
+
+  .pagination a:hover, .pagination a:focus, .pagination a:active {
+    background-color: #fff;
+
+    color: #000;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e4e4e4), color-stop(100%, #cecece));
+    background-image: -webkit-linear-gradient(#e4e4e4, #e4e4e4);
+    background-image: linear-gradient(#e4e4e4, #e4e4e4); 
+
+    background-image: -webkit-linear-gradient(#fff, #fff);
+    background-image: linear-gradient(#fff, #fff);
+    cursor:pointer;
+  }
+  .pagination a.disabled, .pagination a.disabled:hover, .pagination a.disabled:focus, .pagination a.disabled:active {
+    background-color: #fff;
+   
+    background-image: -webkit-linear-gradient(#fff, #fff);
+    background-image: linear-gradient(#fff, #fff);
+    color: #cecece;
+    cursor: default; 
+    background-color: #f3f3f3;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(100%, lightgrey));
+    background-image: -webkit-linear-gradient(#fff, #fff);
+    background-image: linear-gradient(#fff, #fff);
+    color: #a8a8a8;
+    cursor:not-allowed;
+  }
+
+.pagination a:first-child {
+  border: none;
+  border-radius: 2px 0 0 2px; }
+
+.pagination a:last-child {
+  border: none;
+  border-radius: 0 2px 2px 0; }
+
+.pagination input {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  height: 20px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+  text-align: center; }
+
+/* gigantic class for demo purposes */
+.gigantic.pagination {
+  margin: 30px 0; }
+
+.gigantic.pagination a {
+    z-index:1000;
+  height: 35px;
+  width: 35px;
+  font-size: 31px;
+  line-height: 31px; }
+
+.gigantic.pagination input {
+  width: 178px;
+  height: 35px;
+  font-size: 14px;
+  line-height: 30px;
+  border-left:1px solid #cecece;
+  border-right:1px solid #cecece;
+}
+
+/* log element for demo purposes */
+.log {
+  display: none;
+  background-color: #EDEDED;
+  
+  height: 300px;
+  width: 524px;
+  overflow: auto;
+  margin-left: 0;
+  list-style: none;
+  padding: 10px; }
+  .log li {
+    margin-top: 0;
+    margin-bottom: 5px; }
+select.maoxian {
+    border:1px solid #cecece;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -appearance: none;
+    background               : url(/images/basic/down.png) 85% / 15% no-repeat #fdfdfd;
+    border-radius: 3px;
+    cursor:pointer;
+    font-size:0.7em;
+}
+
+select.maoxian:hover {
+    border:1px solid #cecece;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -appearance: none;
+    background               : url(/images/basic/down-hover.png) 85% / 15% no-repeat #fdfdfd;
+    border-radius: 3px;
+    cursor:pointer;
+    font-size:0.7em;
+}
+ 
+select.hetong {
+    border:1px solid #cecece;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -appearance: none;
+    background               : url(/images/basic/down.png) 93% / 7% no-repeat #fdfdfd;
+    border-radius: 3px;
+    cursor:pointer;
+    font-size:0.7em;
+}
+
+select.hetong:hover {
+    border:1px solid #cecece;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -appearance: none;
+    background               : url(/images/basic/down-hover.png) 93% / 7% no-repeat #fdfdfd;
+    border-radius: 3px;
+    cursor:pointer;
+    font-size:0.7em;
+}
+
+

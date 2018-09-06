@@ -1,0 +1,412 @@
+/********************************
+			lefttreepage
+********************************/
+#lef-content{
+	padding-bottom: 0px;
+}
+#lef-ibox{
+	border: 1px solid #ccc;
+	border-top: 0;
+}
+.lef-ul{
+	border: 1px solid #eee;
+	padding-left: 10px;
+}
+.lef-ul li{
+	border-bottom: 1px solid #eee;
+	list-style: none;
+	font-size: 15px;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.lef-child{
+	display: none;
+	padding-left: 0px;
+}
+.lef-child li{
+	padding-left: 20px;
+}
+.lef-sun{
+	display: none;
+	padding-left: 0px;
+}
+.lef-sun li{
+	padding-left: 40px;
+}
+#lef-list{
+	height: 43.5vw;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.rig-content{
+	background: #fff;
+	height: 46.4vw;
+	border-top: 4px solid #e7eaec;
+	overflow: hidden;
+	overflow-y: auto; 
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	position: relative;
+}
+.lef-page{
+	position: absolute;
+	left: 32%;
+	bottom: 0%;
+}
+.pag-posi{
+	position: relative;
+}
+.pag-page{
+	position: absolute;
+	left: 32%;
+	bottom: 0;
+}
+.rig-title{
+	color: #666;
+	border-bottom: 1px solid #eee;
+	padding: 0.5vw 1vw;
+	font-size: 1vw;
+}
+.rig-top{
+	padding: 0.3vw;
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+}
+.rig-tleft{
+	width: 30%;
+    overflow: hidden;
+    float: left;
+}
+.rig-tleft input{
+	width: 60%;
+    font-size: 0.9vw;
+    padding: 0.2vw;
+    color: #999;
+    border-radius: 3px;
+    float: left;
+    margin: 0 5px;
+    outline: none;
+}
+.rig-tleft button{
+    width: 18%;
+    font-size: 1vw;
+    padding: 0.1vw;
+    color: #fff;
+    border-color: #027dcb;
+    background: #027dcb;
+    border-radius: 3px;
+    float: left;
+    outline: none;
+}
+.rig-tright{
+	width: 40%;
+	float: right;
+	list-style: none;
+	margin-right: 10px;
+}
+.rig-tright li{
+	border: 1px solid #999;
+	float: left;
+	border-radius: 2px;
+	font-size: 0.8vw;
+	text-align: center;
+	line-height: 1.7vw;
+	float: right;
+	cursor: pointer;
+	padding: 0 5px;
+}
+.rig-trio{
+	width: 1.7vw;
+	height: 1.7vw;
+	margin-right: 5px;
+}
+.rig-trit{
+	height: 1.7vw;
+}
+.rig-table{
+	width: 95%;
+	text-align: center;
+	font-size: 0.9vw;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+}
+.rig-table tr td{
+	cursor: pointer;
+}
+.rig-table th{
+	border: 1px solid #ccc;
+	padding: 0.5vw 0;
+	text-align: center;
+	background: #f3f3f4;
+}
+.rig-table tr:hover td{
+	background: #eff1c2;
+}
+.rig-table td{
+	padding: 0.5vw 0;
+	border-bottom: 1px dashed #ccc;
+}
+.rig-table td:first-child{
+	border-right: 1px solid #ccc;
+}
+.fa-toggle-on{
+	color: #1bb99a;
+}
+.fa-toggle-on,.fa-toggle-off{
+	cursor: pointer;
+}
+/**********yinying**********/
+.lef-yiny{
+	/*position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10000;
+	background: rgba(0,0,0,0.5);*/
+}
+.lef-ycont{
+	/*width: 40%;
+	height: 30vw;*/
+	background: #fff;
+	border-radius: 5px;
+	/*margin: 10% auto 0;*/
+	overflow: hidden;
+	position: relative;
+}
+.lef-yctop{
+	padding: 0.5vw 1vw;
+	background: #eee;
+	overflow: hidden;
+}
+.lef-yctop p{
+	font-size: 1.3vw;
+	color: #666;
+	float: left;
+	width: 40%;
+	margin-bottom: 0;
+}
+.lef-yctop span{
+	display: block;
+	width: 30%;
+	font-size: 1.5vw;
+	float: right;
+	text-align: right;
+	cursor: pointer;
+}
+.lef-ycform{
+	width: 95%;
+	margin: 20px 40px;
+}
+.lef-ycform div{
+	margin-bottom: 1vw; 
+	overflow: hidden;
+}
+.lef-ycform input{
+	width: 80%;
+    outline: none;
+    font-size: 2vw;
+    padding: 1% 2%;
+    border: 1px solid #999;
+}
+.lef-ycform textarea{
+	width: 82%;
+	padding: 1%;
+	font-size: 2.5vw;
+	outline: none;
+	height: 13vw;
+	float: left;
+	margin-left: 5px;
+}
+.lef-ycform p{
+	width: 6%;
+	font-size: 2vw;
+	color: #666;
+	text-align: right;
+	font-weight: 500;
+	float: left;
+}
+.lef-ycform p span{
+	color: red;
+}
+.lef-ycform label{
+	width: 15%;
+	font-size: 2vw;
+	color: #666;
+	text-align: right;
+	font-weight: 500;
+}
+.lef-ycform label span{
+	color: red;
+}
+#lef-che{
+	width: 3%;
+	height: 2vw;
+	margin-left: 7%;
+	cursor: pointer;
+}
+#lef-yyla{
+	text-align: left;
+	font-size: 2vw;
+}
+.lef-yyul{
+    padding: 10px;
+    width: 93%;
+    margin-bottom: 0;
+}
+.lef-yyul li{
+    float: right;
+    margin-right: 10px;
+    list-style: none;
+    width: 14%;
+    height: 5vw;
+}
+.lef-yyul li button{
+    width: 100%;
+    height: 5vw;
+    font-size: 2vw;
+    outline: none;
+    border-radius: 3px;
+}
+.lef-yyquer{
+	background: #3a4bee;
+	color: #fff;
+	border-color: #3a4bee;
+	cursor: pointer;
+}
+/***********paging************/
+#heigh{
+	height: 100%;
+}
+.pag-posi{
+	height: 100%;
+}
+.pag-table{
+	width: 95%;
+	text-align: center;
+	font-size: 0.9vw;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+}
+.pag-table tr td{
+	cursor: pointer;
+}
+.pag-table th{
+	border: 1px solid #ccc;
+	padding: 0.5vw 0;
+	text-align: center;
+	background: #f3f3f4;
+}
+
+.pag-table td{
+	padding: 0.5vw 0;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.pag-top{
+	padding: 1vw 2vw;
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+}
+.pag-tleft{
+	width: 30%;
+    overflow: hidden;
+    float: left;
+}
+.pag-tleft input{
+	width: 60%;
+    font-size: 0.9vw;
+    padding: 0.2vw;
+    color: #999;
+    border-radius: 3px;
+    float: left;
+    margin: 0 5px;
+    outline: none;
+}
+.pag-tleft button{
+    width: 18%;
+    font-size: 1vw;
+    padding: 0.1vw;
+    color: #fff;
+    border-color: #027dcb;
+    background: #027dcb;
+    border-radius: 3px;
+    float: left;
+    outline: none;
+}
+.pag-tright{
+	width: 40%;
+	float: right;
+	list-style: none;
+	margin-right: 10px;
+}
+.pag-tright li{
+	border: 1px solid #999;
+	float: left;
+	border-radius: 2px;
+	font-size: 0.8vw;
+	text-align: center;
+	line-height: 1.7vw;
+	float: right;
+	cursor: pointer;
+	padding: 0 5px;
+}
+.pag-trio{
+	width: 1.7vw;
+	height: 1.7vw;
+	margin-right: 5px;
+}
+.pag-trit{
+	height: 1.7vw;
+}
+/*************search************/
+.lef-ycont{
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+.sea-ycform{
+	width: 95%;
+	margin: 20px 40px;
+}
+.sea-ycform div{
+	margin-bottom: 3vw; 
+	overflow: hidden;
+}
+.sea-ycform input{
+	width: 80%;
+    outline: none;
+    font-size: 2vw;
+    padding: 1% 2%;
+    border: 1px solid #999;
+}
+.sea-ycform textarea{
+	width: 82%;
+	padding: 1%;
+	font-size: 2.5vw;
+	outline: none;
+	height: 13vw;
+	float: left;
+	margin-left: 5px;
+}
+.sea-ycform p{
+	width: 6%;
+	font-size: 2vw;
+	color: #666;
+	text-align: right;
+	font-weight: 500;
+	float: left;
+}
+.sea-ycform p span{
+	color: red;
+}
+.sea-ycform label{
+	width: 15%;
+	font-size: 2.5vw;
+	color: #666;
+	text-align: right;
+	font-weight: 500;
+}
+.sea-ycform label span{
+	color: red;
+}

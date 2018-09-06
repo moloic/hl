@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 树形视图</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+    <link href="css/plugins/treeview/bootstrap-treeview.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="layer/mobile/need/layer.css">
+    <link rel="stylesheet" type="text/css" href="css/pageNav.css">
+    <link rel="stylesheet" type="text/css" href="layer/theme/default/layer.css">
+    <link rel="stylesheet" type="text/css" href="css/different.css">
+</head>
+
+<body class="gray-bg">
+	
+    <div class="row wrapper wrapper-content animated fadeInRight" id="lef-content">
+        <div class="col-sm-2">
+            <div id="lef-ibox" class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>默认</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#">选项1</a>
+                            </li>
+                            <li><a href="buttons.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content" id="lef-list">
+                    <ul class="lef-ul">
+		            	<li>
+		            		<i class="click-collapse glyphicon glyphicon-plus"></i>
+		            		<i class="glyphicon glyphicon-stop"></i>
+		            		父节点
+		            		<ul class="lef-child">
+		            			<li>
+		            				<i class="click-expand glyphicon glyphicon-plus"></i>
+		            				<i class="glyphicon glyphicon-stop"></i>
+		            				子节点
+		            				<ul class="lef-sun">
+		            					<li><i class="glyphicon glyphicon-stop"></i>孙节点</li>
+		            					<li><i class="glyphicon glyphicon-stop"></i>孙节点</li>
+		            					<li><i class="glyphicon glyphicon-stop"></i>孙节点</li>
+		            					<li><i class="glyphicon glyphicon-stop"></i>孙节点</li>
+		            				</ul>
+		            			</li>
+		            			<li><i class="glyphicon glyphicon-stop"></i>子节点</li>
+		            			<li><i class="glyphicon glyphicon-stop"></i>子节点</li>
+		            			<li><i class="glyphicon glyphicon-stop"></i>子节点</li>
+		            		</ul>
+		            	</li>
+		            	<li>
+		            		<i class="click-collapse glyphicon glyphicon-plus"></i>
+		            		<i class="glyphicon glyphicon-stop"></i>
+		            		父节点
+		            		<ul class="lef-child">
+		            			<li>
+		            				<i class="click-collapse glyphicon glyphicon-plus"></i>
+		            				<i class="glyphicon glyphicon-stop"></i>
+		            				子节点
+		            				<ul class="lef-sun">
+		            					<li><i class="glyphicon glyphicon-stop"></i>孙节点</li>
+		            					<li><i class="glyphicon glyphicon-stop"></i>孙节点</li>
+		            					<li><i class="glyphicon glyphicon-stop"></i>孙节点</li>
+		            					<li><i class="glyphicon glyphicon-stop"></i>孙节点</li>
+		            				</ul>
+		            			</li>
+		            			<li><i class="glyphicon glyphicon-stop"></i>子节点</li>
+		            			<li><i class="glyphicon glyphicon-stop"></i>子节点</li>
+		            			<li><i class="glyphicon glyphicon-stop"></i>子节点</li>
+		            		</ul>
+		            		</li>
+		            	<li><i class="glyphicon glyphicon-stop"></i>父节点</li>
+		            	<li><i class="glyphicon glyphicon-stop"></i>父节点</li>
+		            	<li><i class="glyphicon glyphicon-stop"></i>父节点</li>
+		            </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 ">
+        	<div class="rig-content">
+        		<p class="rig-title">区域信息 - 未选择区域</p>
+        		<div class="rig-top">
+        			<div class="rig-tleft">
+        				<input id="lef-input" type="text" placeholder="请输入名称/编号">
+        				<button id="lef-button"><i class="fa fa-search"></i> 查询</button>
+        			</div>
+        			<ul class="rig-tright">
+        				<li class="rig-trit rig-delete"><i class="fa fa-trash-o"></i> 删除</li>
+        				<li class="rig-trit" id="rig-search"><i class="fa fa-search"></i> 高级搜索</li>
+        				<li class="rig-trit rig-editor"><i class="fa fa-pencil-square-o"></i> 编辑</li>
+        				<li class="rig-trit rig-add"><i class="fa fa-plus"></i> 新增</li>
+        				<li class="rig-trio"><i class="fa fa-refresh"></i></li>
+        			</ul>
+        		</div>
+        		<div class="rig-cont">
+        			<table class="rig-table">
+        				<tr>
+        					<th></th>
+        					<th>编号</th>
+        					<th>名称</th>
+        					<th>简拼</th>
+        					<th>级别</th>
+        					<th>有效</th>
+        					<th>备注</th>
+        				</tr>
+        				<tr class="rig-tr">
+        					<td class="rig-serial">1</td>
+        					<td class="rig-bian">210100</td>
+        					<td class="rig-city">沈阳市</td>
+        					<td class="rig-jian">sys</td>
+        					<td class="rig-number">2</td>
+        					<td><i class="fa fa-toggle-on"></i></td>
+        					<td></td>
+        				</tr>
+        				<tr class="rig-tr">
+        					<td class="rig-serial">2</td>
+        					<td class="rig-bian">210101</td>
+        					<td class="rig-city">北京市</td>
+        					<td class="rig-jian">bjs</td>
+        					<td class="rig-number">1</td>
+        					<td><i class="fa fa-toggle-on"></i></td>
+        					<td></td>
+        				</tr>
+        				<tr class="rig-tr">
+        					<td class="rig-serial">3</td>
+        					<td class="rig-bian">210102</td>
+        					<td class="rig-city">天津市</td>
+        					<td class="rig-jian">tjs</td>
+        					<td class="rig-number">1</td>
+        					<td><i class="fa fa-toggle-off"></i></td>
+        					<td></td>
+        				</tr>
+        				<tr class="rig-tr">
+        					<td class="rig-serial">4</td>
+        					<td class="rig-bian">210102</td>
+        					<td class="rig-city">上海市</td>
+        					<td class="rig-jian">shs</td>
+        					<td class="rig-number">1</td>
+        					<td><i class="fa fa-toggle-on"></i></td>
+        					<td></td>
+        				</tr>
+        				<tr class="rig-tr">
+        					<td class="rig-serial">5</td>
+        					<td class="rig-bian">210103</td>
+        					<td class="rig-city">济南市</td>
+        					<td class="rig-jian">jns</td>
+        					<td class="rig-number">2</td>
+        					<td><i class="fa fa-toggle-on"></i></td>
+        					<td></td>
+        				</tr>
+        				<tr class="rig-tr">
+        					<td class="rig-serial">6</td>
+        					<td class="rig-bian">210104</td>
+        					<td class="rig-city">德州市</td>
+        					<td class="rig-jian">dzs</td>
+        					<td class="rig-number">3</td>
+        					<td><i class="fa fa-toggle-on"></i></td>
+        					<td></td>
+        				</tr>
+        			</table>
+        		</div>
+        		<nav aria-label="Page navigation" class="page-nav-outer lef-page" id="PageNavId"></nav>
+        	</div>
+        	
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script type="text/javascript" src="layer/mobile/layer.js"></script>
+    <script type="text/javascript" src="layer/layer.js"></script>
+    <script type="text/javascript" src="js/demo/layer-demo.js"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script type="text/javascript" src="js/pageNav.js"></script>
+
+    <!-- Bootstrap-Treeview plugin javascript -->
+    <script src="js/plugins/treeview/bootstrap-treeview.js"></script>
+    <script src="js/demo/treeview-demo.js"></script>
+
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+    <!--统计代码，可删除-->
+    <script type="text/javascript" src="js/left.js"></script>
+    <script type="text/javascript">
+    /***************分页******************/
+	    var pageNavObj = null;//用于储存分页对象
+	    pageNavObj = new PageNavCreate("PageNavId",{
+	         pageCount:30, 
+	         currentPage:1, 
+	         perPageNum:5, 
+	    });
+	    pageNavObj.afterClick(pageNavCallBack);
+
+	    function pageNavCallBack(clickPage){
+	        pageNavObj = new PageNavCreate("PageNavId",{
+	             pageCount:30, 
+	             currentPage:clickPage, 
+	             perPageNum:5, 
+	        });
+	        pageNavObj.afterClick(pageNavCallBack);
+	    }
+	/*****************增添****************/    
+  	$(".rig-add").on("click",function(){
+  		  layer.open({
+		  type: 2,
+		  area: ['700px', '450px'],
+		  fixed: false, //不固定
+		  maxmin: true,
+		  content: 'yiny.html',
+		  btn: ['确定'],
+          yes: function (index, layero) {
+              callBack(index, layero);
+              return false;
+              layer.close(index); //如果设定了yes回调，需进行手工关闭
+          },
+          cancel: function () {
+            //右上角关闭回调
+
+          }
+		});
+  	})
+  	$(".rig-editor").on("click",function(){
+  		if($(".rig-table tr").find("td").hasClass("rig-dele")){
+	  		layer.open({
+	  			type:2,
+	  			area:['700px', '450px'],
+	  			fixed:false,
+	  			maxmin:true,
+	  			content:'yiny.html',
+	  			btn: ['确定'],
+		        yes: function (index, layero) {
+		            callBack(index, layero);
+		            return false;
+		            layer.close(index); //如果设定了yes回调，需进行手工关闭
+		        },
+		        cancel: function () {
+		            //右上角关闭回调
+
+		        }
+	  		});
+	  	}else{
+	  		layer.msg('未选中列表', function(){
+			//关闭后的操作
+			});
+	  	}
+  	})
+  	$("#rig-search").click(function(){
+  		layer.open({
+  			type:2,
+  			area:['700px', '450px'],
+  			fixed:false,
+  			maxmin:true,
+  			content:'search.html',
+  			btn: ['确定'],
+	        yes: function (index, layero) {
+	            callBack(index, layero);
+	            return false;
+	            layer.close(index); //如果设定了yes回调，需进行手工关闭
+	        },
+	        cancel: function () {
+	            //右上角关闭回调
+
+	        }
+  		});
+  	})
+  	/********************删除*******************/
+    $(".rig-delete").click(function(){
+        if($(".rig-table tr").find("td").hasClass("rig-dele")){
+            $(".rig-dele").parent("tr").remove();
+        }else{
+           layer.msg('未选中列表', function(){
+			//关闭后的操作
+			});
+        }
+        
+    })
+	    
+    </script>
+</body>
+
+</html>
