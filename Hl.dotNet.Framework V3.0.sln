@@ -7,6 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hl.dotNet.Web", "Hl.dotNet.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hl.dotNet.UI", "Hl.dotNet.UI", "{A253F9D3-34D8-4F62-9617-C03C9C60438E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hl.dotNet.Models", "Hl.dotNet.Models", "{3DACBEAE-1956-4ADC-A019-6BB51491EF2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hl.dotNet.Models", "Hl.dotNet.Models\Hl.dotNet.Models.csproj", "{9E1A28CE-2308-4E29-9F84-29F0BCD5C851}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hl.dotNet.Framework", "Hl.dotNet.Framework", "{19293424-E62C-4920-A2E1-B90028FDE7A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hl.dotNet.Utilities", "Hl.dotNet.Utilities\Hl.dotNet.Utilities.csproj", "{0E17F09F-1F79-4287-936F-A222140C3178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hl.dotNet.CacheBase", "Hl.dotNet.CacheBase\Hl.dotNet.CacheBase.csproj", "{E5C51240-E39B-4CAB-ABCE-834DF0D1CE5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hl.dotNet.Ioc", "Hl.dotNet.Ioc\Hl.dotNet.Ioc.csproj", "{297BB447-0B0D-4E4E-ABA2-F844C02D9364}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +29,32 @@ Global
 		{2F8E13FF-DB0C-4EE9-A57A-B14C28C6AE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F8E13FF-DB0C-4EE9-A57A-B14C28C6AE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F8E13FF-DB0C-4EE9-A57A-B14C28C6AE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1A28CE-2308-4E29-9F84-29F0BCD5C851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1A28CE-2308-4E29-9F84-29F0BCD5C851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1A28CE-2308-4E29-9F84-29F0BCD5C851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1A28CE-2308-4E29-9F84-29F0BCD5C851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E17F09F-1F79-4287-936F-A222140C3178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E17F09F-1F79-4287-936F-A222140C3178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E17F09F-1F79-4287-936F-A222140C3178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E17F09F-1F79-4287-936F-A222140C3178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C51240-E39B-4CAB-ABCE-834DF0D1CE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C51240-E39B-4CAB-ABCE-834DF0D1CE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C51240-E39B-4CAB-ABCE-834DF0D1CE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C51240-E39B-4CAB-ABCE-834DF0D1CE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297BB447-0B0D-4E4E-ABA2-F844C02D9364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297BB447-0B0D-4E4E-ABA2-F844C02D9364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297BB447-0B0D-4E4E-ABA2-F844C02D9364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297BB447-0B0D-4E4E-ABA2-F844C02D9364}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2F8E13FF-DB0C-4EE9-A57A-B14C28C6AE23} = {A253F9D3-34D8-4F62-9617-C03C9C60438E}
+		{9E1A28CE-2308-4E29-9F84-29F0BCD5C851} = {3DACBEAE-1956-4ADC-A019-6BB51491EF2B}
+		{0E17F09F-1F79-4287-936F-A222140C3178} = {19293424-E62C-4920-A2E1-B90028FDE7A5}
+		{E5C51240-E39B-4CAB-ABCE-834DF0D1CE5E} = {19293424-E62C-4920-A2E1-B90028FDE7A5}
+		{297BB447-0B0D-4E4E-ABA2-F844C02D9364} = {19293424-E62C-4920-A2E1-B90028FDE7A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6D22913-3F63-43FC-97FB-C758C32843B9}
