@@ -1609,6 +1609,24 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hl.dotNet.Business\Hl.dotNet.Business.csproj">
+      <Project>{01d015d7-7a0a-4fef-a873-653c9ca479c0}</Project>
+      <Name>Hl.dotNet.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hl.dotNet.IBusiness\Hl.dotNet.IBusiness.csproj">
+      <Project>{43a40107-f8d2-4130-9379-110d34358d17}</Project>
+      <Name>Hl.dotNet.IBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hl.dotNet.Models\Hl.dotNet.Models.csproj">
+      <Project>{9e1a28ce-2308-4e29-9f84-29f0bcd5c851}</Project>
+      <Name>Hl.dotNet.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hl.dotNet.Utilities\Hl.dotNet.Utilities.csproj">
+      <Project>{0e17f09f-1f79-4287-936f-a222140c3178}</Project>
+      <Name>Hl.dotNet.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
