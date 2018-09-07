@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hl.dotNet.CacheBase", "Hl.d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hl.dotNet.Ioc", "Hl.dotNet.Ioc\Hl.dotNet.Ioc.csproj", "{297BB447-0B0D-4E4E-ABA2-F844C02D9364}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hl.dotNet.Orm", "Hl.dotNet.Orm", "{F802CFD2-E2BB-423D-81B5-D9331B995C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hl.dotNet.Orm", "Hl.dotNet.Orm\Hl.dotNet.Orm.csproj", "{FC01904C-07CC-435A-AE3D-19FA0646BF1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{297BB447-0B0D-4E4E-ABA2-F844C02D9364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{297BB447-0B0D-4E4E-ABA2-F844C02D9364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{297BB447-0B0D-4E4E-ABA2-F844C02D9364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC01904C-07CC-435A-AE3D-19FA0646BF1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC01904C-07CC-435A-AE3D-19FA0646BF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC01904C-07CC-435A-AE3D-19FA0646BF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC01904C-07CC-435A-AE3D-19FA0646BF1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{0E17F09F-1F79-4287-936F-A222140C3178} = {19293424-E62C-4920-A2E1-B90028FDE7A5}
 		{E5C51240-E39B-4CAB-ABCE-834DF0D1CE5E} = {19293424-E62C-4920-A2E1-B90028FDE7A5}
 		{297BB447-0B0D-4E4E-ABA2-F844C02D9364} = {19293424-E62C-4920-A2E1-B90028FDE7A5}
+		{FC01904C-07CC-435A-AE3D-19FA0646BF1E} = {F802CFD2-E2BB-423D-81B5-D9331B995C2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6D22913-3F63-43FC-97FB-C758C32843B9}
