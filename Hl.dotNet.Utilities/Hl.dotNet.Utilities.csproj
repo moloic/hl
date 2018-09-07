@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>0e17f09f-1f79-4287-936f-a222140c3178</ProjectGuid>
+    <ProjectGuid>{0E17F09F-1F79-4287-936F-A222140C3178}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Hl.dotNet.Utilities</RootNamespace>
@@ -31,24 +31,93 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="log4net">
+      <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder">
+      <HintPath>..\Lib\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpZipLib">
+      <HintPath>..\Lib\SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Base.Common\CmdHelper.cs" />
+    <Compile Include="Base.Common\CommonHelper.cs" />
+    <Compile Include="Base.Common\ConvertHelper.cs" />
+    <Compile Include="Base.Common\PinyinHelper.cs" />
+    <Compile Include="Base.Common\RandomHelper.cs" />
+    <Compile Include="Base.Common\RMBHelper.cs" />
+    <Compile Include="Base.Common\SqlChecker.cs" />
+    <Compile Include="Base.Common\SqlFilterHelper.cs" />
+    <Compile Include="Base.Common\StringHelper.cs" />
+    <Compile Include="Base.Common\SysHelper.cs" />
+    <Compile Include="Base.Config\Config.cs" />
+    <Compile Include="Base.Config\ConfigHelper.cs" />
+    <Compile Include="Base.Data\DataHelper.cs" />
+    <Compile Include="Base.Data\HashtableHelper.cs" />
+    <Compile Include="Base.DateTime\DateTimeHelper.cs" />
+    <Compile Include="Base.DebugLog\LogFactory.cs" />
+    <Compile Include="Base.DebugLog\LogHelper.cs" />
+    <Compile Include="Base.Extension\IManageProvider.cs" />
+    <Compile Include="Base.Extension\IManageUser.cs" />
+    <Compile Include="Base.Extension\ManageProvider.cs" />
+    <Compile Include="Base.Extension\Permission\PermissionMode.cs" />
+    <Compile Include="Base.File\DirFileHelper.cs" />
+    <Compile Include="Base.File\FileDateSorter.cs" />
+    <Compile Include="Base.File\FileDownHelper.cs" />
+    <Compile Include="Base.File\GZipHelper.cs" />
+    <Compile Include="Base.File\INIFileHelper.cs" />
+    <Compile Include="Base.File\ReadHelper.cs" />
+    <Compile Include="Base.File\SizeHelper.cs" />
+    <Compile Include="Base.File\UploadHelper.cs" />
+    <Compile Include="Base.Http\HttpHelper.cs" />
+    <Compile Include="Base.Http\NetHelper.cs" />
+    <Compile Include="Base.Http\RequestHelper.cs" />
+    <Compile Include="Base.Json\JsonHelper.cs" />
+    <Compile Include="Base.Json\JsonMessage.cs" />
+    <Compile Include="Base.Log\BaseLog.cs" />
+    <Compile Include="Base.Model\EenLanguage.cs" />
+    <Compile Include="Base.Model\JqGridParam.cs" />
+    <Compile Include="Base.Model\LayuiDataMessage.cs" />
+    <Compile Include="Base.Model\OperationType.cs" />
+    <Compile Include="Base.Model\ResultMessage.cs" />
+    <Compile Include="Base.Path\BasePath.cs" />
+    <Compile Include="Base.QRCoder\BaseQRCoder.cs" />
+    <Compile Include="Base.Quartz\JobScheduler.cs" />
+    <Compile Include="Base.Security\DESEncrypt.cs" />
+    <Compile Include="Base.Security\Md5Helper.cs" />
+    <Compile Include="Base.Web\BuildFormHelper.cs" />
+    <Compile Include="Base.Web\CookieHelper.cs" />
+    <Compile Include="Base.Web\IPScanerHelper.cs" />
+    <Compile Include="Base.Web\JsCssHelper.cs" />
+    <Compile Include="Base.Web\SessionHelper.cs" />
+    <Compile Include="Base.Web\ToState.cs" />
+    <Compile Include="Base.Xml\XMLHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Base.WeiXin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
