@@ -9,7 +9,8 @@ namespace Hl.dotNet.Models
     [Serializable]
     public class BaseModel
     {
-        
+
+        public string deparId { get; set; }
 
         public string UserId { get; set; }
 
@@ -165,7 +166,30 @@ namespace Hl.dotNet.Models
         /// </summary>
         public IList<string> IdList { get; set; }
 
+        public string StateName { get; set; }
+
+        /// <summary>
+        /// 自定义搜索条件
+        /// </summary>
+        public string Selectval { get; set; }
 
 
+        /// <summary>
+        /// layui 排序方式
+        /// </summary>
+        public string layuitype { get; set; }
+
+
+        /// <summary>
+        /// layui 排序字段
+        /// </summary>
+        public string layuifieid { get; set; }
+
+        /// <summary>
+        /// 年
+        /// </summary>
+        public int? year { get; set; }
+
+        public int? season { get; set; }
     }
 }

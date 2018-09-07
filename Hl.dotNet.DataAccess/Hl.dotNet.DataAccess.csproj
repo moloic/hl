@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C9A89AA-16C7-4EF0-8098-D039F339E801}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hl.dotNet.DataAccess</RootNamespace>
+    <AssemblyName>Hl.dotNet.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bodorcloud\base_departmentDal.cs" />
+    <Compile Include="bodorcloud\base_dicsDal.cs" />
+    <Compile Include="bodorcloud\base_fileDal.cs" />
+    <Compile Include="bodorcloud\base_menuDal.cs" />
+    <Compile Include="bodorcloud\base_qrcoderDal.cs" />
+    <Compile Include="bodorcloud\Base_SysLogDal.cs" />
+    <Compile Include="bodorcloud\base_userDal.cs" />
+    <Compile Include="bodorcloud\base_userroleDal.cs" />
+    <Compile Include="bodorcloud\cloud_agentequipmentDal.cs" />
+    <Compile Include="bodorcloud\cloud_alarmDal.cs" />
+    <Compile Include="bodorcloud\cloud_componentDal.cs" />
+    <Compile Include="bodorcloud\cloud_componentlistDal.cs" />
+    <Compile Include="bodorcloud\cloud_componentrepairrecordDal.cs" />
+    <Compile Include="bodorcloud\cloud_componentrepairrecordhistoryDal.cs" />
+    <Compile Include="bodorcloud\cloud_componetmessageDal.cs" />
+    <Compile Include="bodorcloud\cloud_crmandsupportorderDal.cs" />
+    <Compile Include="bodorcloud\cloud_equipmentcomponenDal.cs" />
+    <Compile Include="bodorcloud\cloud_equipmentDal.cs" />
+    <Compile Include="bodorcloud\cloud_equipmentmodelDal.cs" />
+    <Compile Include="bodorcloud\cloud_equipmentstatusDal.cs" />
+    <Compile Include="bodorcloud\cloud_equipmentStatusmodelDal.cs" />
+    <Compile Include="bodorcloud\cloud_helpinfoDal.cs" />
+    <Compile Include="bodorcloud\cloud_messageDal.cs" />
+    <Compile Include="bodorcloud\cloud_ordernodeDal.cs" />
+    <Compile Include="bodorcloud\cloud_repairorderDal.cs" />
+    <Compile Include="bodorcloud\cloud_systemparameterDal.cs" />
+    <Compile Include="bodorcloud\cloud_systemparameterlogDal.cs" />
+    <Compile Include="bodorcloud\cloud_systemparametertypeDal.cs" />
+    <Compile Include="bodorcloud\cloud_userequipmentDal.cs" />
+    <Compile Include="bodorcloud\cloud_workpersonnelDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hl.dotNet.Models\Hl.dotNet.Models.csproj">
+      <Project>{9e1a28ce-2308-4e29-9f84-29f0bcd5c851}</Project>
+      <Name>Hl.dotNet.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hl.dotNet.Orm\Hl.dotNet.Orm.csproj">
+      <Project>{fc01904c-07cc-435a-ae3d-19fa0646bf1e}</Project>
+      <Name>Hl.dotNet.Orm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hl.dotNet.Repository\Hl.dotNet.Repository.csproj">
+      <Project>{c2e0fcfe-f023-454f-8c8a-67e820eab0c1}</Project>
+      <Name>Hl.dotNet.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hl.dotNet.Utilities\Hl.dotNet.Utilities.csproj">
+      <Project>{0e17f09f-1f79-4287-936f-a222140c3178}</Project>
+      <Name>Hl.dotNet.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
