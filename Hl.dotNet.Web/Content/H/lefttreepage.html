@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="css/pageNav.css">
     <link rel="stylesheet" type="text/css" href="layer/theme/default/layer.css">
     <link rel="stylesheet" type="text/css" href="css/different.css">
+    <link href="css/plugins/jqgrid/ui.jqgrid.css?0820" rel="stylesheet">
+    <link href="css/plugins/jsTree/style.min.css" rel="stylesheet">
 </head>
 
 <body class="gray-bg">
@@ -48,8 +50,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="ibox-content" id="lef-list">
-                    <ul class="lef-ul">
+                <div class="ibox-content" id="lef-list" style="padding: 15px 0 20px 0">
+                    <!-- <ul class="lef-ul">
 		            	<li>
 		            		<i class="click-collapse glyphicon glyphicon-plus"></i>
 		            		<i class="glyphicon glyphicon-stop"></i>
@@ -95,7 +97,54 @@
 		            	<li><i class="glyphicon glyphicon-stop"></i>父节点</li>
 		            	<li><i class="glyphicon glyphicon-stop"></i>父节点</li>
 		            	<li><i class="glyphicon glyphicon-stop"></i>父节点</li>
-		            </ul>
+		            </ul> -->
+                    <div id="jstree1">
+                        <ul>
+                            <li class="jstree-open">H+主题
+                                <ul>
+                                    <li>css
+                                        <ul>
+                                            <li>animate.css</li>
+                                            <li>bootstrap.css</li>
+                                            <li>style.css</li>
+                                        </ul>
+                                    </li>
+                                    <li>email-templates
+                                        <ul>
+                                            <li>action.html</li>
+                                            <li>alert.html</li>
+                                            <li>billing.html</li>
+                                        </ul>
+                                    </li>
+                                    <li>fonts
+                                        <ul>
+                                            <li>glyphicons-halflings-regular.eot</li>
+                                            <li>glyphicons-halflings-regular.svg</li>
+                                            <li>glyphicons-halflings-regular.ttf</li>
+                                            <li>glyphicons-halflings-regular.woff</li>
+                                        </ul>
+                                    </li>
+                                    <li class="jstree-open">img
+                                        <ul>
+                                            <li>profile_small.jpg</li>
+                                            <li>angular_logo.png</li>
+                                            <li>html_logo.png</li>
+                                            <li>mvc_logo.png</li>
+                                        </ul>
+                                    </li>
+                                    <li class="jstree-open">js
+                                        <ul>
+                                            <li>hplus.js</li>
+                                            <li>bootstrap.js</li>
+                                            <li>jquery-2.1.1.js</li>
+                                            <li>jquery-ui.custom.min.js</li>
+                                            <li>jquery-ui-1.10.4.min.js</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,6 +255,29 @@
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
     <!--统计代码，可删除-->
     <script type="text/javascript" src="js/left.js"></script>
+
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+
+ 
+    <script src="js/plugins/jqgrid/i18n/grid.locale-cn.js?0820"></script>
+    <script src="js/plugins/jqgrid/jquery.jqGrid.min.js?0820"></script>
+
+
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/plugins/jsTree/jstree.min.js"></script>
+
+
+    <script src="js/demo/peity-demo.js"></script>
+    <style type="text/css">
+         .jstree-open > .jstree-anchor > .fa-folder:before {
+            content: "\f07c";
+        }
+
+        .jstree-default .jstree-icon.none {
+            width: 0;
+        }
+    </style>
+
     <script type="text/javascript">
     /***************分页******************/
 	    var pageNavObj = null;//用于储存分页对象

@@ -83,9 +83,9 @@ nav.page-nav-outer .page-input-box input {
   color: #333;
 }
 nav.page-nav-outer .page-input-box button {
-    padding: 3px 5px;
+    padding: 3px 1vw;
     outline: none;
-    width: 3vw;
+    /*width: 3vw;*/
     margin-left: 0.3vw;
     background: #337ab7;
     border-color: #337ab7;

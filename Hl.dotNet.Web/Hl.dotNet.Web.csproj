@@ -99,9 +99,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -746,43 +743,26 @@
     <Content Include="Content\H\suggest.html" />
     <Content Include="Content\H\sweetalert.html" />
     <Content Include="Content\H\table_basic.html" />
+    <Content Include="Content\H\table_basics.html" />
+    <Content Include="Content\H\table_basict.html" />
     <Content Include="Content\H\table_bootstrap.html" />
     <Content Include="Content\H\table_data_tables.html" />
     <Content Include="Content\H\table_foo_table.html" />
     <Content Include="Content\H\table_jqgrid.html" />
+    <Content Include="Content\H\table_jquery.html" />
     <Content Include="Content\H\tabs_panels.html" />
     <Content Include="Content\H\teams_board.html" />
     <Content Include="Content\H\theform.html" />
     <Content Include="Content\H\timeline.html" />
     <Content Include="Content\H\timeline_v2.html" />
     <Content Include="Content\H\toastr_notifications.html" />
+    <Content Include="Content\H\tree.html" />
     <Content Include="Content\H\tree_view.html" />
     <Content Include="Content\H\typography.html" />
     <Content Include="Content\H\webim.html" />
     <Content Include="Content\H\widgets.html" />
     <Content Include="Content\H\yiny.html" />
-    <Content Include="Content\H\__MACOSX\img\._pay.png" />
-    <Content Include="Content\H\__MACOSX\js\plugins\echarts\._echarts-all.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\layer\._layer.min.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\layer\extend\._layer.ext.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\suggest\._bootstrap-suggest.min.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._Uploader.swf" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.css" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.custom.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.custom.min.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.fis.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.flashonly.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.flashonly.min.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.html5only.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.html5only.min.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.min.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.noimage.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.noimage.min.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.nolog.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.nolog.min.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.withoutimage.js" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._webuploader.withoutimage.min.js" />
+    <Content Include="Content\H\测试.html" />
     <Content Include="Content\ScriptsPlug\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
     <Content Include="Content\ScriptsPlug\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
     <Content Include="Content\ScriptsPlug\bootstrap-3.3.7-dist\css\bootstrap.css" />
@@ -1422,19 +1402,6 @@
     <Content Include="Content\H\js\plugins\suggest\data.json" />
     <Content Include="Content\H\js\plugins\webuploader\.DS_Store" />
     <Content Include="Content\H\js\plugins\webuploader\README.md" />
-    <Content Include="Content\H\__MACOSX\css\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\docs\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\img\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\js\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\js\plugins\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\js\plugins\bootstrap-table\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\js\plugins\echarts\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\js\plugins\layer\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\js\plugins\layer\._extend" />
-    <Content Include="Content\H\__MACOSX\js\plugins\suggest\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\js\plugins\suggest\._data.json" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._.DS_Store" />
-    <Content Include="Content\H\__MACOSX\js\plugins\webuploader\._README.md" />
     <Content Include="Content\ScriptsPlug\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
     <Content Include="Content\ScriptsPlug\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
     <Content Include="Content\ScriptsPlug\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
@@ -1598,7 +1565,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\H\plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

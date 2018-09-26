@@ -7,6 +7,8 @@
 #lef-ibox{
 	border: 1px solid #ccc;
 	border-top: 0;
+	height: 46.4vw;
+	background: #fff;
 }
 .lef-ul{
 	border: 1px solid #eee;
@@ -77,6 +79,7 @@
 	width: 30%;
     overflow: hidden;
     float: left;
+    margin-left: 2%;
 }
 .rig-tleft input{
 	width: 60%;
@@ -87,11 +90,11 @@
     float: left;
     margin: 0 5px;
     outline: none;
+    border: 1px solid #999;
 }
 .rig-tleft button{
-    width: 18%;
     font-size: 1vw;
-    padding: 0.1vw;
+    padding: 0.1vw 0.5vw;
     color: #fff;
     border-color: #027dcb;
     background: #027dcb;
@@ -100,10 +103,10 @@
     outline: none;
 }
 .rig-tright{
-	width: 40%;
+	width: 60%;
 	float: right;
 	list-style: none;
-	margin-right: 10px;
+	margin-right: 2%;
 }
 .rig-tright li{
 	border: 1px solid #999;
@@ -117,12 +120,11 @@
 	padding: 0 5px;
 }
 .rig-trio{
-	width: 1.7vw;
-	height: 1.7vw;
-	margin-right: 5px;
+	margin-right: 20px;
+	padding: 0 0.5vw !important;
 }
 .rig-trit{
-	height: 1.7vw;
+	/*height: 1.7vw;*/
 }
 .rig-table{
 	width: 95%;
