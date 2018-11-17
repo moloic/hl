@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.Common;
 using System.Data.OleDb;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 
@@ -70,7 +71,7 @@ namespace Hl.dotNet.Orm
                     conn = new OleDbConnection(connectionString);
                     break;
                 case DatabaseType.SQLite:
-                    //conn = new SQLiteConnection(connectionString);
+                    conn = new SQLiteConnection(connectionString);
                     break;
                 default:
                     throw new Exception("数据库类型目前不支持！");
@@ -100,7 +101,7 @@ namespace Hl.dotNet.Orm
                     cmd = new OleDbCommand();
                     break;
                 case DatabaseType.SQLite:
-                    //   cmd = new SQLiteCommand();
+                    cmd = new SQLiteCommand();
                     break;
                 default:
                     throw new Exception("数据库类型目前不支持！");
@@ -130,7 +131,7 @@ namespace Hl.dotNet.Orm
                     adapter = new OleDbDataAdapter();
                     break;
                 case DatabaseType.SQLite:
-                    //  adapter = new SQLiteDataAdapter();
+                    adapter = new SQLiteDataAdapter();
                     break;
                 default:
                     throw new Exception("数据库类型目前不支持！");
@@ -161,7 +162,7 @@ namespace Hl.dotNet.Orm
                     adapter = new OleDbDataAdapter((OleDbCommand)cmd);
                     break;
                 case DatabaseType.SQLite:
-                    //     adapter = new SQLiteDataAdapter((SQLiteCommand)cmd);
+                    adapter = new SQLiteDataAdapter((SQLiteCommand)cmd);
                     break;
                 default: throw new Exception("数据库类型目前不支持！");
             }
@@ -191,7 +192,7 @@ namespace Hl.dotNet.Orm
                     param = new OleDbParameter();
                     break;
                 case DatabaseType.SQLite:
-                    //    param = new SQLiteParameter();
+                    param = new SQLiteParameter();
                     break;
                 default:
                     throw new Exception("数据库类型目前不支持！");
@@ -292,9 +293,9 @@ namespace Hl.dotNet.Orm
                     while (i < size) { param[i] = new OleDbParameter(); i++; }
                     break;
                 case DatabaseType.SQLite:
-                //    param = new SQLiteParameter[size];
-                //   while (i < size) { param[i] = new SQLiteParameter(); i++; }
-                //  break;
+                    param = new SQLiteParameter[size];
+                    while (i < size) { param[i] = new SQLiteParameter(); i++; }
+                    break;
                 default:
                     throw new Exception("数据库类型目前不支持！");
             }
